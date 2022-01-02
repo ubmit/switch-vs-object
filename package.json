@@ -1,0 +1,29 @@
+{
+  "name": "switch-vs-object",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "code-complexity src",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(ts|json)\"",
+    "format": "npm run prettier -- --write",
+    "check-format": "npm run prettier -- --list-different",
+    "check-types": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilhermedeandrade/switch-vs-object.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guilhermedeandrade/switch-vs-object/issues"
+  },
+  "homepage": "https://github.com/guilhermedeandrade/switch-vs-object#readme",
+  "devDependencies": {
+    "@guilhermedeandrade/prettier-config": "^1.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "code-complexity": "^4.1.0"
+  }
+}
