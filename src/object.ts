@@ -1,20 +1,20 @@
-type MonthToTranslationKey = {
-  [index: string]: string
-  January: string
-  February: string
-  March: string
-  April: string
-  May: string
-  June: string
-  July: string
-  August: string
-  September: string
-  October: string
-  November: string
-  December: string
-}
+type Month =
+  | 'January'
+  | 'February'
+  | 'March'
+  | 'April'
+  | 'May'
+  | 'June'
+  | 'July'
+  | 'August'
+  | 'September'
+  | 'October'
+  | 'November'
+  | 'December'
 
-const MONTH_TO_TRANSLATION_KEY: MonthToTranslationKey = {
+type Mapping = Record<Month, string>
+
+const MONTH_TO_TRANSLATION_KEY: Mapping = {
   January: 'JANUARY_TRANSLATION_KEY',
   February: 'FEBRUARY_TRANSLATION_KEY',
   March: 'MARCH_TRANSLATION_KEY',
@@ -29,6 +29,6 @@ const MONTH_TO_TRANSLATION_KEY: MonthToTranslationKey = {
   December: 'DECEMBER_TRANSLATION_KEY',
 }
 
-const getMonthObj = (month: string) => MONTH_TO_TRANSLATION_KEY[month]
+const getMonthObj = (month: Month) => MONTH_TO_TRANSLATION_KEY[month]
 
 getMonthObj('January')
