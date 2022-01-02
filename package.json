@@ -4,8 +4,8 @@
   "scripts": {
     "start": "ccts-ui src",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(ts|json)\"",
-    "format": "npm run prettier -- --write",
-    "check-format": "npm run prettier -- --list-different",
+    "format": "pnpm prettier -- --write",
+    "check-format": "pnpm prettier -- --list-different",
     "check-types": "tsc",
     "validate": "npm-run-all --parallel check-types check-format"
   },
