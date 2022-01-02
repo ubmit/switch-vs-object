@@ -2,7 +2,7 @@
   "name": "switch-vs-object",
   "version": "1.0.0",
   "scripts": {
-    "start": "code-complexity src",
+    "start": "code-complexity .",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(ts|json)\"",
     "format": "npm run prettier -- --write",
     "check-format": "npm run prettier -- --list-different",
