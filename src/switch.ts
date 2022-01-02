@@ -1,4 +1,4 @@
-const getMonth = (month: string) => {
+const getMonthSwitch = (month: string) => {
   let translationKey = ''
   switch (month) {
     case 'January':
@@ -40,6 +40,4 @@ const getMonth = (month: string) => {
   return translationKey
 }
 
-getMonth('January')
-
-export {}
+getMonthSwitch('January')

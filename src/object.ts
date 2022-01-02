@@ -29,8 +29,6 @@ const MONTH_TO_TRANSLATION_KEY: MonthToTranslationKey = {
   December: 'DECEMBER_TRANSLATION_KEY',
 }
 
-const getMonth = (month: string) => MONTH_TO_TRANSLATION_KEY[month]
+const getMonthObj = (month: string) => MONTH_TO_TRANSLATION_KEY[month]
 
-getMonth('January')
-
-export {}
+getMonthObj('January')
