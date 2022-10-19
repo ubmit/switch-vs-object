@@ -1,4 +1,6 @@
-const getMonthSwitch = (month: string) => {
+import {Month} from './types'
+
+const getMonthSwitch = (month: Month) => {
   let translationKey = ''
   switch (month) {
     case 'January':

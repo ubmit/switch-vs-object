@@ -1,16 +1,4 @@
-type Month =
-  | 'January'
-  | 'February'
-  | 'March'
-  | 'April'
-  | 'May'
-  | 'June'
-  | 'July'
-  | 'August'
-  | 'September'
-  | 'October'
-  | 'November'
-  | 'December'
+import {Month} from './types'
 
 type Mapping = Record<Month, string>
 
